@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkillUp — Platform belajar online terbaik untuk Gen-Z. Kelas Zoom interaktif dan video materi berkualitas tinggi untuk akselerasi karier kamu." />
+  <meta property="og:title" content="SkillUp — Belajar Tanpa Batas" />
+  <meta property="og:description" content="Platform belajar online terbaik. Kelas live Zoom & video materi premium." />
+  <title>SkillUp — Belajar Tanpa Batas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="8" fill="url(#logoGrad)"/>
+            <path d="M8 14L12 10L16 14L20 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 18L12 14L16 18L20 14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7C3AED"/>
+                <stop offset="1" stop-color="#2563EB"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">Skill<span class="logo-accent">Up</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services" class="nav-link">Kelas</a></li>
+        <li><a href="#partner" class="nav-link">Partner</a></li>
+        <li><a href="#testimonial" class="nav-link">Testimoni</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li>
+          <a href="#cta" class="btn btn-primary btn-sm">
+            <i data-lucide="zap" class="btn-icon"></i>
+            Mulai Gratis
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i data-lucide="sun" class="icon-light"></i>
+          <i data-lucide="moon" class="icon-dark"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="#services" class="mobile-nav-link">Kelas</a></li>
+        <li><a href="#partner" class="mobile-nav-link">Partner</a></li>
+        <li><a href="#testimonial" class="mobile-nav-link">Testimoni</a></li>
+        <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        <li><a href="#cta" class="btn btn-primary btn-full">Mulai Gratis</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          🔥 #1 Platform Belajar Online Indonesia
+        </div>
+
+        <h1 class="hero-title">
+          Stop Scroll, <br />
+          <span class="gradient-text">Mulai Belajar.</span><br />
+          Level Up Karier <span class="gradient-text-2">Sekarang.</span>
+        </h1>
+
+        <p class="hero-desc">
+          Akses 50+ kelas premium via <strong>Zoom Live</strong> &amp; <strong>Video on Demand</strong>.
+          Belajar bareng mentor berpengalaman, dapet sertifikat, dan langsung bisa dipraktikin.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#services" class="btn btn-primary btn-lg">
+            <i data-lucide="play-circle" class="btn-icon"></i>
+            Explore Kelas
+          </a>
+          <a href="#" class="btn btn-ghost btn-lg">
+            <i data-lucide="video" class="btn-icon"></i>
+            Lihat Demo
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">15K+</span>
+            <span class="stat-label">Siswa Aktif</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Kelas Premium</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+        <div class="hero-card-main">
+          <div class="zoom-ui">
+            <div class="zoom-header">
+              <div class="zoom-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="zoom-title">SkillUp Live Class — UI/UX Design</span>
+            </div>
+            <div class="zoom-grid">
+              <div class="zoom-participant active">
+                <div class="participant-avatar av1">MR</div>
+                <div class="participant-info">
+                  <span class="p-name">Mentor Reza</span>
+                  <span class="p-role">🎙️ Speaking</span>
+                </div>
+                <div class="speaking-wave">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="zoom-participant">
+                <div class="participant-avatar av2">AS</div>
+                <div class="participant-info">
+                  <span class="p-name">Andi S.</span>
+                  <span class="p-role">📹 On Camera</span>
+                </div>
+              </div>
+              <div class="zoom-participant">
+                <div class="participant-avatar av3">DL</div>
+                <div class="participant-info">
+                  <span class="p-name">Diana L.</span>
+                  <span class="p-role">🎧 Listening</span>
+                </div>
+              </div>
+              <div class="zoom-participant more">
+                <div class="participant-avatar av4">+12</div>
+                <div class="participant-info">
+                  <span class="p-name">Others</span>
+                  <span class="p-role">In Session</span>
+                </div>
+              </div>
+            </div>
+            <div class="zoom-bar">
+              <div class="zoom-controls">
+                <button class="zc-btn active" title="Mic">🎙️</button>
+                <button class="zc-btn" title="Camera">📷</button>
+                <button class="zc-btn red" title="End">📵</button>
+              </div>
+              <div class="zoom-record">
+                <span class="rec-dot"></span> REC 01:24:07
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating cards -->
+        <div class="floating-card fc-1" data-aos="zoom-in" data-aos-delay="600">
+          <div class="fc-icon">🏆</div>
+          <div class="fc-text">
+            <strong>Sertifikat</strong>
+            <span>Diakui industri</span>
+          </div>
+        </div>
+        <div class="floating-card fc-2" data-aos="zoom-in" data-aos-delay="800">
+          <div class="fc-icon">⚡</div>
+          <div class="fc-text">
+            <strong>Live Q&amp;A</strong>
+            <span>Tanya langsung</span>
+          </div>
+        </div>
+        <div class="floating-card fc-3" data-aos="zoom-in" data-aos-delay="1000">
+          <div class="fc-progress">
+            <div class="fc-icon-sm">📈</div>
+            <div>
+              <span class="fc-label">Progress Kamu</span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" style="width: 72%"></div>
+              </div>
+              <span class="fc-val">72% Selesai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== PARTNER ========== -->
+  <section class="partner" id="partner">
+    <div class="container">
+      <p class="partner-label" data-aos="fade-up">Dipercaya oleh 100+ perusahaan top Indonesia</p>
+      <div class="partner-track-wrapper">
+        <div class="partner-track">
+          <div class="partner-logo"><svg width="120" height="36" viewBox="0 0 120 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Tokopedia</text></svg></div>
+          <div class="partner-logo"><svg width="80" height="36" viewBox="0 0 80 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Gojek</text></svg></div>
+          <div class="partner-logo"><svg width="90" height="36" viewBox="0 0 90 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Shopee</text></svg></div>
+          <div class="partner-logo"><svg width="100" height="36" viewBox="0 0 100 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Traveloka</text></svg></div>
+          <div class="partner-logo"><svg width="50" height="36" viewBox="0 0 50 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">BCA</text></svg></div>
+          <div class="partner-logo"><svg width="110" height="36" viewBox="0 0 110 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Ruangguru</text></svg></div>
+          <div class="partner-logo"><svg width="80" height="36" viewBox="0 0 80 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Telkom</text></svg></div>
+          <div class="partner-logo"><svg width="60" height="36" viewBox="0 0 60 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Grab</text></svg></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="partner-logo"><svg width="120" height="36" viewBox="0 0 120 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Tokopedia</text></svg></div>
+          <div class="partner-logo"><svg width="80" height="36" viewBox="0 0 80 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Gojek</text></svg></div>
+          <div class="partner-logo"><svg width="90" height="36" viewBox="0 0 90 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Shopee</text></svg></div>
+          <div class="partner-logo"><svg width="100" height="36" viewBox="0 0 100 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Traveloka</text></svg></div>
+          <div class="partner-logo"><svg width="50" height="36" viewBox="0 0 50 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">BCA</text></svg></div>
+          <div class="partner-logo"><svg width="110" height="36" viewBox="0 0 110 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Ruangguru</text></svg></div>
+          <div class="partner-logo"><svg width="80" height="36" viewBox="0 0 80 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Telkom</text></svg></div>
+          <div class="partner-logo"><svg width="60" height="36" viewBox="0 0 60 36" fill="none"><text x="0" y="26" font-family="Inter" font-weight="800" font-size="22" fill="currentColor">Grab</text></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">🎓 Kelas Unggulan</span>
+        <h2 class="section-title">Pilih Kelasmu,<br /><span class="gradient-text">Tentukan Masa Depanmu.</span></h2>
+        <p class="section-desc">Dari pemula sampai pro, ada kelas yang pas buat kamu. Live Zoom interaktif + rekaman video yang bisa ditonton kapan aja.</p>
+      </div>
+
+      <div class="format-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="format-tab active" data-filter="all">Semua</button>
+        <button class="format-tab" data-filter="zoom">
+          <i data-lucide="video" class="tab-icon"></i> Live Zoom
+        </button>
+        <button class="format-tab" data-filter="video">
+          <i data-lucide="play" class="tab-icon"></i> Video Materi
+        </button>
+        <button class="format-tab" data-filter="bundle">
+          <i data-lucide="package" class="tab-icon"></i> Bundle
+        </button>
+      </div>
+
+      <div class="courses-grid" id="courses-grid">
+
+        <div class="course-card" data-type="zoom" data-aos="fade-up" data-aos-delay="100">
+          <div class="course-thumbnail ct-1">
+            <div class="course-illustration">
+              <svg width="100%" height="100%" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="url(#g1)"/>
+                <rect x="40" y="30" width="240" height="120" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <rect x="55" y="45" width="140" height="8" rx="4" fill="rgba(255,255,255,0.6)"/>
+                <rect x="55" y="61" width="100" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+                <rect x="55" y="85" width="80" height="5" rx="2.5" fill="#7C3AED" opacity="0.8"/>
+                <rect x="55" y="96" width="120" height="5" rx="2.5" fill="rgba(255,255,255,0.2)"/>
+                <rect x="55" y="107" width="60" height="5" rx="2.5" fill="#2563EB" opacity="0.8"/>
+                <rect x="55" y="118" width="100" height="5" rx="2.5" fill="rgba(255,255,255,0.2)"/>
+                <rect x="56" y="130" width="3" height="12" rx="1.5" fill="white" opacity="0.9">
+                  <animate attributeName="opacity" values="0.9;0;0.9" dur="1s" repeatCount="indefinite"/>
+                </rect>
+                <rect x="230" y="40" width="48" height="20" rx="10" fill="#EF4444"/>
+                <circle cx="242" cy="50" r="3" fill="white">
+                  <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+                </circle>
+                <text x="250" y="54" font-family="Inter" font-size="9" font-weight="700" fill="white">LIVE</text>
+                <defs>
+                  <linearGradient id="g1" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1e1b4b"/><stop offset="1" stop-color="#312e81"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="course-badge badge-zoom"><i data-lucide="radio" class="badge-icon"></i> Live Zoom</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-category">💻 Web Development</span>
+              <span class="course-level level-beginner">Pemula</span>
+            </div>
+            <h3 class="course-title">Full-Stack Web Dev Bootcamp</h3>
+            <p class="course-desc">Kuasai HTML, CSS, JavaScript, React & Node.js dari nol. Langsung praktek bikin project nyata bareng mentor.</p>
+            <div class="course-info">
+              <span><i data-lucide="clock" class="info-icon"></i> 12 Sesi Live</span>
+              <span><i data-lucide="users" class="info-icon"></i> 487 Siswa</span>
+              <span><i data-lucide="star" class="info-icon"></i> 4.9</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-old">Rp 1.200.000</span>
+                <span class="price-new">Rp 799.000</span>
+              </div>
+              <a href="#cta" class="btn btn-primary btn-sm">Daftar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-type="video" data-aos="fade-up" data-aos-delay="200">
+          <div class="course-thumbnail ct-2">
+            <div class="course-illustration">
+              <svg width="100%" height="100%" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="url(#g2)"/>
+                <rect x="30" y="25" width="260" height="130" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <rect x="50" y="40" width="60" height="60" rx="12" fill="rgba(124,58,237,0.5)" stroke="#7C3AED" stroke-width="1.5"/>
+                <circle cx="155" cy="70" r="30" fill="rgba(37,99,235,0.5)" stroke="#2563EB" stroke-width="1.5"/>
+                <polygon points="230,45 260,95 200,95" fill="rgba(16,185,129,0.5)" stroke="#10B981" stroke-width="1.5"/>
+                <rect x="50" y="115" width="16" height="16" rx="4" fill="#7C3AED"/>
+                <rect x="72" y="115" width="16" height="16" rx="4" fill="#2563EB"/>
+                <rect x="94" y="115" width="16" height="16" rx="4" fill="#10B981"/>
+                <rect x="116" y="115" width="16" height="16" rx="4" fill="#F59E0B"/>
+                <circle cx="160" cy="90" r="22" fill="rgba(0,0,0,0.5)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <polygon points="153,82 172,90 153,98" fill="white"/>
+                <defs>
+                  <linearGradient id="g2" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0f0c29"/><stop offset="0.5" stop-color="#302b63"/><stop offset="1" stop-color="#24243e"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="course-badge badge-video"><i data-lucide="play-circle" class="badge-icon"></i> Video</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-category">🎨 UI/UX Design</span>
+              <span class="course-level level-intermediate">Menengah</span>
+            </div>
+            <h3 class="course-title">UI/UX Design Masterclass</h3>
+            <p class="course-desc">Figma dari A-Z, design thinking, prototyping, sampai user research. Bangun portfolio yang bikin HRD langsung DM.</p>
+            <div class="course-info">
+              <span><i data-lucide="film" class="info-icon"></i> 38 Video</span>
+              <span><i data-lucide="users" class="info-icon"></i> 1.2K Siswa</span>
+              <span><i data-lucide="star" class="info-icon"></i> 4.8</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-old">Rp 999.000</span>
+                <span class="price-new">Rp 599.000</span>
+              </div>
+              <a href="#cta" class="btn btn-primary btn-sm">Daftar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-type="zoom" data-aos="fade-up" data-aos-delay="300">
+          <div class="course-thumbnail ct-3">
+            <div class="course-illustration">
+              <svg width="100%" height="100%" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="url(#g3)"/>
+                <rect x="30" y="20" width="260" height="140" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                <rect x="55" y="110" width="20" height="35" rx="3" fill="rgba(124,58,237,0.7)"/>
+                <rect x="85" y="90" width="20" height="55" rx="3" fill="rgba(124,58,237,0.9)"/>
+                <rect x="115" y="70" width="20" height="75" rx="3" fill="#7C3AED"/>
+                <rect x="145" y="80" width="20" height="65" rx="3" fill="rgba(124,58,237,0.9)"/>
+                <rect x="175" y="55" width="20" height="90" rx="3" fill="#7C3AED"/>
+                <rect x="205" y="40" width="20" height="105" rx="3" fill="#9333EA"/>
+                <rect x="235" y="30" width="20" height="115" rx="3" fill="#A855F7"/>
+                <polyline points="65,110 95,88 125,65 155,75 185,52 215,38 245,28" stroke="#2563EB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <rect x="55" y="28" width="70" height="28" rx="6" fill="rgba(255,255,255,0.08)"/>
+                <text x="65" y="38" font-family="Inter" font-size="7" fill="rgba(255,255,255,0.6)">ROAS</text>
+                <text x="65" y="50" font-family="Inter" font-size="11" font-weight="700" fill="white">4.7x</text>
+                <defs>
+                  <linearGradient id="g3" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0a0a1a"/><stop offset="1" stop-color="#1a0a2e"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="course-badge badge-zoom"><i data-lucide="radio" class="badge-icon"></i> Live Zoom</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-category">📊 Digital Marketing</span>
+              <span class="course-level level-beginner">Pemula</span>
+            </div>
+            <h3 class="course-title">Digital Marketing Mastery</h3>
+            <p class="course-desc">Meta Ads, Google Ads, SEO, Content Strategy — semua dibahas tuntas. Dari 0 sampai bisa handle budget ratusan juta.</p>
+            <div class="course-info">
+              <span><i data-lucide="clock" class="info-icon"></i> 8 Sesi Live</span>
+              <span><i data-lucide="users" class="info-icon"></i> 890 Siswa</span>
+              <span><i data-lucide="star" class="info-icon"></i> 4.9</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-old">Rp 850.000</span>
+                <span class="price-new">Rp 499.000</span>
+              </div>
+              <a href="#cta" class="btn btn-primary btn-sm">Daftar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-type="video" data-aos="fade-up" data-aos-delay="100">
+          <div class="course-thumbnail ct-4">
+            <div class="course-illustration">
+              <svg width="100%" height="100%" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="url(#g4)"/>
+                <circle cx="70" cy="60" r="12" fill="rgba(124,58,237,0.8)" stroke="#7C3AED" stroke-width="2"/>
+                <circle cx="70" cy="90" r="12" fill="rgba(124,58,237,0.6)" stroke="#7C3AED" stroke-width="2"/>
+                <circle cx="70" cy="120" r="12" fill="rgba(124,58,237,0.4)" stroke="#7C3AED" stroke-width="2"/>
+                <circle cx="150" cy="50" r="12" fill="rgba(37,99,235,0.8)" stroke="#2563EB" stroke-width="2"/>
+                <circle cx="150" cy="75" r="12" fill="rgba(37,99,235,0.7)" stroke="#2563EB" stroke-width="2"/>
+                <circle cx="150" cy="100" r="12" fill="rgba(37,99,235,0.6)" stroke="#2563EB" stroke-width="2"/>
+                <circle cx="150" cy="125" r="12" fill="rgba(37,99,235,0.5)" stroke="#2563EB" stroke-width="2"/>
+                <circle cx="230" cy="70" r="14" fill="rgba(16,185,129,0.8)" stroke="#10B981" stroke-width="2"/>
+                <circle cx="230" cy="105" r="14" fill="rgba(16,185,129,0.6)" stroke="#10B981" stroke-width="2"/>
+                <line x1="82" y1="60" x2="138" y2="52" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line x1="82" y1="60" x2="138" y2="75" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line x1="82" y1="90" x2="138" y2="75" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <line x1="82" y1="90" x2="138" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <line x1="82" y1="120" x2="138" y2="100" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line x1="82" y1="120" x2="138" y2="125" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <line x1="162" y1="65" x2="216" y2="72" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <line x1="162" y1="90" x2="216" y2="82" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <line x1="162" y1="105" x2="216" y2="110" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <text x="90" y="155" font-family="Inter" font-size="10" font-weight="600" fill="rgba(255,255,255,0.4)">AI Model Training</text>
+                <defs>
+                  <linearGradient id="g4" x1="0" y1="180" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0d0221"/><stop offset="1" stop-color="#190d35"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="course-badge badge-bundle"><i data-lucide="package" class="badge-icon"></i> Bundle</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-category">🤖 AI &amp; Data Science</span>
+              <span class="course-level level-advanced">Advanced</span>
+            </div>
+            <h3 class="course-title">AI &amp; Data Science Bundle</h3>
+            <p class="course-desc">Python, Machine Learning, Deep Learning + 8x sesi live Zoom bareng data scientist yang udah kerja di Google &amp; Microsoft.</p>
+            <div class="course-info">
+              <span><i data-lucide="film" class="info-icon"></i> 60 Video</span>
+              <span><i data-lucide="clock" class="info-icon"></i> 8 Sesi Live</span>
+              <span><i data-lucide="star" class="info-icon"></i> 5.0</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-old">Rp 2.500.000</span>
+                <span class="price-new">Rp 1.299.000</span>
+              </div>
+              <a href="#cta" class="btn btn-primary btn-sm">Daftar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-type="video" data-aos="fade-up" data-aos-delay="200">
+          <div class="course-thumbnail ct-5">
+            <div class="course-illustration">
+              <svg width="100%" height="100%" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="url(#g5)"/>
+                <rect x="60" y="30" width="200" height="120" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                <rect x="90" y="50" width="60" height="42" rx="6" fill="rgba(239,68,68,0.3)" stroke="rgba(239,68,68,0.6)" stroke-width="1.5"/>
+                <circle cx="120" cy="71" r="12" fill="rgba(239,68,68,0.5)" stroke="rgba(239,68,68,0.8)" stroke-width="1"/>
+                <circle cx="120" cy="71" r="6" fill="#EF4444"/>
+                <rect x="150" y="60" width="16" height="8" rx="4" fill="rgba(239,68,68,0.5)"/>
+                <rect x="170" y="45" width="55" height="90" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <rect x="176" y="52" width="43" height="76" rx="5" fill="rgba(0,0,0,0.4)"/>
+                <circle cx="197" cy="90" r="14" fill="rgba(239,68,68,0.7)"/>
+                <polygon points="193,84 206,90 193,96" fill="white"/>
+                <text x="80" y="108" font-family="Inter" font-size="9" fill="rgba(255,255,255,0.5)">❤️ 24.5K</text>
+                <text x="80" y="120" font-family="Inter" font-size="9" fill="rgba(255,255,255,0.5)">👁 182K</text>
+                <defs>
+                  <linearGradient id="g5" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1a0508"/><stop offset="1" stop-color="#2d0a1a"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="course-badge badge-video"><i data-lucide="play-circle" class="badge-icon"></i> Video</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-category">📱 Content Creator</span>
+              <span class="course-level level-beginner">Pemula</span>
+            </div>
+            <h3 class="course-title">Content Creator Pro</h3>
+            <p class="course-desc">Dari nol jadi konten kreator profesional. Short-form video, copywriting, growth hacking — semua ada disini.</p>
+            <div class="course-info">
+              <span><i data-lucide="film" class="info-icon"></i> 45 Video</span>
+              <span><i data-lucide="users" class="info-icon"></i> 2.1K Siswa</span>
+              <span><i data-lucide="star" class="info-icon"></i> 4.7</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-old">Rp 750.000</span>
+                <span class="price-new">Rp 449.000</span>
+              </div>
+              <a href="#cta" class="btn btn-primary btn-sm">Daftar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-type="bundle" data-aos="fade-up" data-aos-delay="300">
+          <div class="course-thumbnail ct-6">
+            <div class="course-illustration">
+              <svg width="100%" height="100%" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="url(#g6)"/>
+                <polyline points="40,140 80,110 120,120 160,80 200,90 240,50 280,60" stroke="url(#lg6)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M40,140 L80,110 L120,120 L160,80 L200,90 L240,50 L280,60 L280,155 L40,155 Z" fill="url(#ag6)" opacity="0.3"/>
+                <rect x="60" y="85" width="8" height="35" rx="2" fill="#10B981"/>
+                <rect x="100" y="95" width="8" height="25" rx="2" fill="#EF4444"/>
+                <rect x="140" y="65" width="8" height="30" rx="2" fill="#10B981"/>
+                <rect x="180" y="70" width="8" height="28" rx="2" fill="#10B981"/>
+                <rect x="220" y="42" width="8" height="22" rx="2" fill="#10B981"/>
+                <rect x="260" y="52" width="8" height="20" rx="2" fill="#EF4444"/>
+                <text x="200" y="30" font-family="Inter" font-size="14" font-weight="800" fill="white">+127%</text>
+                <text x="200" y="44" font-family="Inter" font-size="9" fill="rgba(255,255,255,0.5)">Return in 1 Year</text>
+                <defs>
+                  <linearGradient id="g6" x1="0" y1="0" x2="320" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#051a10"/><stop offset="1" stop-color="#0a2d1a"/>
+                  </linearGradient>
+                  <linearGradient id="lg6" x1="0" y1="0" x2="320" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#10B981"/><stop offset="1" stop-color="#34D399"/>
+                  </linearGradient>
+                  <linearGradient id="ag6" x1="0" y1="0" x2="0" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#10B981"/><stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="course-badge badge-bundle"><i data-lucide="trending-up" class="badge-icon"></i> Bundle</div>
+          </div>
+          <div class="course-body">
+            <div class="course-meta">
+              <span class="course-category">💰 Personal Finance</span>
+              <span class="course-level level-beginner">Pemula</span>
+            </div>
+            <h3 class="course-title">Investasi &amp; Financial Freedom</h3>
+            <p class="course-desc">Saham, reksa dana, kripto, dan properti — semua dibahas dari sisi fundamental. Mulai invest dari Rp 100 ribu.</p>
+            <div class="course-info">
+              <span><i data-lucide="film" class="info-icon"></i> 52 Video</span>
+              <span><i data-lucide="users" class="info-icon"></i> 3.4K Siswa</span>
+              <span><i data-lucide="star" class="info-icon"></i> 4.8</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">
+                <span class="price-old">Rp 1.100.000</span>
+                <span class="price-new">Rp 699.000</span>
+              </div>
+              <a href="#cta" class="btn btn-primary btn-sm">Daftar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="services-cta" data-aos="fade-up">
+        <a href="#" class="btn btn-outline btn-lg">
+          <i data-lucide="grid" class="btn-icon"></i>
+          Lihat Semua Kelas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIAL ========== -->
+  <section class="testimonial" id="testimonial">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">💬 Kata Mereka</span>
+        <h2 class="section-title">Real Talk dari<br /><span class="gradient-text">Alumni SkillUp.</span></h2>
+        <p class="section-desc">Bukan testimoni palsu. Ini cerita nyata dari siswa yang udah buktiin sendiri.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testi-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testi-header">
+            <div class="testi-avatar av-t1">AR</div>
+            <div class="testi-info">
+              <strong>Arinda Rizky</strong>
+              <span>UI/UX Designer @ Tokopedia</span>
+            </div>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="testi-text">"Jujur awalnya skeptis, tapi setelah ikut kelas UI/UX Masterclass... dalam 3 bulan gue dapet kerja di Tokopedia dengan gaji 2x lipat. Mentornya legit banget, langsung feedback portfolio gue."</p>
+          <div class="testi-tag">UI/UX Design Masterclass</div>
+        </div>
+
+        <div class="testi-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="testi-header">
+            <div class="testi-avatar av-t2">BW</div>
+            <div class="testi-info">
+              <strong>Bagus Wicaksono</strong>
+              <span>Fullstack Dev @ Startup YC</span>
+            </div>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="testi-text">"Dulu anak ekonomi, sekarang jadi fullstack dev. Gila sih SkillUp ini. Bootcamp-nya intense banget, tapi worth it banget. Tiap sesi Zoom langsung coding bareng mentor. Recommend 100%!"</p>
+          <div class="testi-tag">Full-Stack Bootcamp</div>
+        </div>
+
+        <div class="testi-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testi-header">
+            <div class="testi-avatar av-t3">DM</div>
+            <div class="testi-info">
+              <strong>Dinda Maharani</strong>
+              <span>Digital Marketer @ Agensi</span>
+            </div>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="testi-text">"Langsung praktek manage iklan beneran, nggak cuma teori doang. Sekarang gue handle ads budget 500jt/bulan. ROI klien naik 4x. Community-nya juga supportif banget!"</p>
+          <div class="testi-tag">Digital Marketing Mastery</div>
+        </div>
+
+        <div class="testi-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testi-header">
+            <div class="testi-avatar av-t4">RF</div>
+            <div class="testi-info">
+              <strong>Reza Firmansyah</strong>
+              <span>Data Scientist @ Bank Mandiri</span>
+            </div>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="testi-text">"Bundle AI &amp; Data Science-nya luar biasa. Nggak nyangka bisa landing di bank BUMN sebagai Data Scientist fresh grad. Materinya up-to-date banget, bahkan ada module tentang LLMs terbaru."</p>
+          <div class="testi-tag">AI &amp; Data Science Bundle</div>
+        </div>
+
+        <div class="testi-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testi-header">
+            <div class="testi-avatar av-t5">SA</div>
+            <div class="testi-info">
+              <strong>Sinta Aulia</strong>
+              <span>Content Creator • 450K Followers</span>
+            </div>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="testi-text">"Dari 2000 ke 450.000 followers dalam 6 bulan setelah ikut kelas Content Creator Pro. Serius ini bukan lebay. Strateginya beneran works, khususnya buat short-form video."</p>
+          <div class="testi-tag">Content Creator Pro</div>
+        </div>
+
+        <div class="testi-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="testi-header">
+            <div class="testi-avatar av-t6">FH</div>
+            <div class="testi-info">
+              <strong>Farhan Hakim</strong>
+              <span>Investor &amp; Pengusaha Muda</span>
+            </div>
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="testi-text">"Dulu takut invest. Sekarang portfolio gue udah 80jt dan terus tumbuh. Kelas investasinya bikin gue ngerti kenapa financial literacy itu penting. Mentor-nya sabar banget!"</p>
+          <div class="testi-tag">Investasi &amp; Financial Freedom</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-wrapper">
+        <div class="faq-left" data-aos="fade-right">
+          <span class="section-badge">🤔 FAQ</span>
+          <h2 class="section-title">Masih ada<br /><span class="gradient-text">pertanyaan?</span></h2>
+          <p class="section-desc">Kita jawab semua kekhawatiran kamu. Kalau masih belum ketemu jawabannya, langsung chat CS kita ya!</p>
+          <a href="#" class="btn btn-outline" style="margin-top: 1.5rem;">
+            <i data-lucide="message-circle" class="btn-icon"></i>
+            Chat dengan CS
+          </a>
+        </div>
+
+        <div class="faq-right" data-aos="fade-left">
+          <div class="faq-list">
+            <div class="faq-item" id="faq-1">
+              <button class="faq-question" onclick="toggleFaq('faq-1')">
+                <span>Gimana cara ikut kelas Live Zoom-nya?</span>
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Setelah kamu daftar dan pembayaran dikonfirmasi, kamu bakal dapet link Zoom meeting dan jadwal sesi live via email. Kelas dilakukan dalam kelompok kecil (maks 30 orang) biar bisa interaktif dan semua pertanyaan bisa dijawab langsung sama mentor.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-2">
+              <button class="faq-question" onclick="toggleFaq('faq-2')">
+                <span>Kalau nggak bisa hadir live, gimana?</span>
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Tenang! Semua sesi live direkam dan bisa kamu akses di dashboard platform kami kapanpun kamu mau, tanpa batas waktu. Jadi kamu nggak akan ketinggalan materi sama sekali.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-3">
+              <button class="faq-question" onclick="toggleFaq('faq-3')">
+                <span>Sertifikat dari SkillUp diakui di mana aja?</span>
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Sertifikat SkillUp diakui oleh 100+ perusahaan partner kami, termasuk startup teknologi, BUMN, dan perusahaan multinasional. Sertifikat dilengkapi QR Code verifikasi yang bisa dicek langsung oleh recruiter.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-4">
+              <button class="faq-question" onclick="toggleFaq('faq-4')">
+                <span>Metode pembayaran apa aja yang tersedia?</span>
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Kami menerima berbagai metode pembayaran: transfer bank (BCA, BNI, Mandiri, BRI), dompet digital (GoPay, OVO, Dana, ShopeePay), kartu kredit/debit, dan cicilan 0% via Kredivo &amp; Akulaku untuk pembelian di atas Rp 500.000.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-5">
+              <button class="faq-question" onclick="toggleFaq('faq-5')">
+                <span>Ada garansi uang kembali nggak?</span>
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Ada! Kami kasih <strong>garansi 7 hari uang kembali</strong> tanpa syarat ribet. Kalau kamu ngerasa kelas ini nggak sesuai ekspektasi dalam 7 hari pertama, kami refund 100%.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-6">
+              <button class="faq-question" onclick="toggleFaq('faq-6')">
+                <span>Apakah ada program afiliasi atau referral?</span>
+                <i data-lucide="chevron-down" class="faq-icon"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Yep! Program referral kami kasih kamu komisi <strong>30% per sale</strong> yang berhasil dari link kamu. Udah banyak alumni yang dapet passive income puluhan juta dari program ini. Daftar lewat dashboard setelah beli kelas ya!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta" id="cta">
+    <div class="cta-bg">
+      <div class="cta-orb orb-a"></div>
+      <div class="cta-orb orb-b"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content" data-aos="zoom-in" data-aos-duration="700">
+        <div class="cta-badge">🚀 Limited Seats — Jangan Sampai Ketinggalan</div>
+        <h2 class="cta-title">
+          Mulai Perjalananmu<br />
+          <span class="gradient-text">Hari Ini.</span>
+        </h2>
+        <p class="cta-desc">
+          15.000+ orang udah buktiin sendiri. Sekarang giliran kamu.
+          Daftar sekarang dan dapetin akses ke semua materi + komunitas eksklusif alumni SkillUp.
+        </p>
+
+        <div class="cta-offer">
+          <div class="offer-item">
+            <i data-lucide="check-circle" class="offer-icon"></i>
+            <span>Akses lifetime ke semua video</span>
+          </div>
+          <div class="offer-item">
+            <i data-lucide="check-circle" class="offer-icon"></i>
+            <span>Sertifikat terverifikasi</span>
+          </div>
+          <div class="offer-item">
+            <i data-lucide="check-circle" class="offer-icon"></i>
+            <span>Komunitas alumni eksklusif</span>
+          </div>
+          <div class="offer-item">
+            <i data-lucide="check-circle" class="offer-icon"></i>
+            <span>Garansi uang kembali 7 hari</span>
+          </div>
+        </div>
+
+        <div class="cta-form">
+          <input type="email" id="cta-email" class="cta-input" placeholder="Masukkan email kamu..." />
+          <button class="btn btn-cta" id="cta-submit-btn" onclick="handleCtaSubmit()">
+            <i data-lucide="zap" class="btn-icon"></i>
+            Daftar Sekarang — Gratis!
+          </button>
+        </div>
+
+        <p class="cta-note">✅ Tanpa kartu kredit &nbsp;·&nbsp; ✅ Cancel kapanpun &nbsp;·&nbsp; ✅ Mulai dalam 5 menit</p>
+
+        <div class="cta-urgency">
+          <p class="urgency-text">Harga spesial berakhir dalam</p>
+          <div class="urgency-timer">
+            <div class="timer-unit">
+              <span class="timer-num" id="timer-h">08</span>
+              <span class="timer-label">Jam</span>
+            </div>
+            <span class="timer-sep">:</span>
+            <div class="timer-unit">
+              <span class="timer-num" id="timer-m">24</span>
+              <span class="timer-label">Menit</span>
+            </div>
+            <span class="timer-sep">:</span>
+            <div class="timer-unit">
+              <span class="timer-num" id="timer-s">13</span>
+              <span class="timer-label">Detik</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo">
+            <div class="logo-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <rect width="28" height="28" rx="8" fill="url(#flg)"/>
+                <path d="M8 14L12 10L16 14L20 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 18L12 14L16 18L20 14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+                <defs>
+                  <linearGradient id="flg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#7C3AED"/>
+                    <stop offset="1" stop-color="#2563EB"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="logo-text">Skill<span class="logo-accent">Up</span></span>
+          </a>
+          <p class="footer-desc">Platform belajar online #1 untuk Gen-Z Indonesia. Belajar dari mentor terbaik, dapet sertifikat, langsung naik level.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Kelas</h4>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">AI &amp; Data Science</a></li>
+              <li><a href="#">Content Creator</a></li>
+              <li><a href="#">Personal Finance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Perusahaan</h4>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Karier</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Partner</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kebijakan Refund</a></li>
+              <li><a href="#">Syarat &amp; Ketentuan</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SkillUp. All rights reserved. Made with ❤️ in Indonesia 🇮🇩</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i data-lucide="check-circle" class="toast-icon"></i>
+    <span id="toast-msg">Berhasil! Cek email kamu ya 🎉</span>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
